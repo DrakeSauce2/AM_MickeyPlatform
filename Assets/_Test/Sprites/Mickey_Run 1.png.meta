@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bd1886522f03cb240a0a45b06e46caf4
+guid: 9315413ec03344148b0aef3cac1ad50d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -399,69 +399,6 @@ TextureImporter:
       bones: []
       spriteID: 9730e6a31703a0141883e767c9b20047
       internalID: 1186596509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mickey_Run_14
-      rect:
-        serializedVersion: 2
-        x: 1540
-        y: 1375
-        width: 110.52631
-        height: 125
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e16807477d293a14c9905955f1906759
-      internalID: 2129943186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mickey_Run_15
-      rect:
-        serializedVersion: 2
-        x: 1650
-        y: 1375
-        width: 110.52631
-        height: 125
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e1e54b2d39c50444a2d55dec700fd41
-      internalID: -658411436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mickey_Run_16
-      rect:
-        serializedVersion: 2
-        x: 1760
-        y: 1375
-        width: 110.52631
-        height: 125
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0115e794fb89c6148bc43f91f58a157e
-      internalID: -1001933982
       vertices: []
       indices: 
       edges: []
