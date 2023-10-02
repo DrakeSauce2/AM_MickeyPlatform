@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static GameManager Instance;
+
+    [SerializeField] private Transform player;
+    [Space]
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Vector3 offset;
+
+    private void Awake()
     {
-        
+        if (Instance == null) Instance = this;
+        else Destroy(this);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RespawnPlayer()
     {
-        
+        player.position = spawnPoint.position + offset;
     }
+
+    public void SetSpawnPoint(Transform newSpawnPoint)
+    {
+        spawnPoint = newSpawnPoint;
+    }
+
 }

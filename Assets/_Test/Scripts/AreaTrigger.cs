@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeathBox : MonoBehaviour
+public class AreaTrigger : MonoBehaviour
 {
+    [SerializeField] private Transform triggerSpawnPoint;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            GameManager.Instance.RespawnPlayer();
+            GameManager.Instance.SetSpawnPoint(triggerSpawnPoint);
         }
     }
 }
