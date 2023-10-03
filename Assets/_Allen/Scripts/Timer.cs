@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
     {
         FormatTime();
 
-        timerText.text = $"{minutes.ToString("D2")}:{seconds.ToString("F2")}";
+        timerText.text = string.Format("{0:00}:{1:00.00}", minutes, seconds);
     }
 
     private void FormatTime()
