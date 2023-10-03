@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private Transform player;
     [Space]
-    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Vector3 spawnPoint;
     [SerializeField] private Vector3 offset;
 
     private void Awake()
@@ -19,12 +19,12 @@ public class GameManager : MonoBehaviour
 
     public void RespawnPlayer()
     {
-        player.position = spawnPoint.position + offset;
+        player.position = spawnPoint + offset;
     }
 
     public void SetSpawnPoint(Transform newSpawnPoint)
     {
-        spawnPoint = newSpawnPoint;
+        spawnPoint = newSpawnPoint.position;
     }
 
 }

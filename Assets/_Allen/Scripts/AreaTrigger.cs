@@ -11,6 +11,7 @@ public class AreaTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GameManager.Instance.SetSpawnPoint(triggerSpawnPoint);
+            gameObject.SetActive(false);
         }
     }
 }
