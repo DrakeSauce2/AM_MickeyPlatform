@@ -113,9 +113,9 @@ TextureImporter:
       name: Mickey_Run_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -134,9 +134,9 @@ TextureImporter:
       name: Mickey_Run_1
       rect:
         serializedVersion: 2
-        x: 110
+        x: 116
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -155,9 +155,9 @@ TextureImporter:
       name: Mickey_Run_2
       rect:
         serializedVersion: 2
-        x: 220
+        x: 227
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -176,9 +176,9 @@ TextureImporter:
       name: Mickey_Run_3
       rect:
         serializedVersion: 2
-        x: 330
+        x: 338
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -197,9 +197,9 @@ TextureImporter:
       name: Mickey_Run_4
       rect:
         serializedVersion: 2
-        x: 440
+        x: 449
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -218,9 +218,9 @@ TextureImporter:
       name: Mickey_Run_5
       rect:
         serializedVersion: 2
-        x: 550
+        x: 563
         y: 1375
-        width: 110.52631
+        width: 91
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -239,9 +239,9 @@ TextureImporter:
       name: Mickey_Run_6
       rect:
         serializedVersion: 2
-        x: 660
+        x: 671
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -260,9 +260,9 @@ TextureImporter:
       name: Mickey_Run_7
       rect:
         serializedVersion: 2
-        x: 770
+        x: 782
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -281,9 +281,9 @@ TextureImporter:
       name: Mickey_Run_8
       rect:
         serializedVersion: 2
-        x: 880
+        x: 893
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -302,9 +302,9 @@ TextureImporter:
       name: Mickey_Run_9
       rect:
         serializedVersion: 2
-        x: 990
+        x: 1003
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -323,9 +323,9 @@ TextureImporter:
       name: Mickey_Run_10
       rect:
         serializedVersion: 2
-        x: 1100
+        x: 1113
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -344,9 +344,9 @@ TextureImporter:
       name: Mickey_Run_11
       rect:
         serializedVersion: 2
-        x: 1210
+        x: 1224
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -365,9 +365,9 @@ TextureImporter:
       name: Mickey_Run_12
       rect:
         serializedVersion: 2
-        x: 1320
+        x: 1339
         y: 1375
-        width: 110.52631
+        width: 91
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -386,9 +386,9 @@ TextureImporter:
       name: Mickey_Run_13
       rect:
         serializedVersion: 2
-        x: 1430
+        x: 1446
         y: 1375
-        width: 110.52631
+        width: 101
         height: 125
       alignment: 1
       pivot: {x: 0, y: 1}
