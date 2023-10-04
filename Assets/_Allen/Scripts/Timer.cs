@@ -6,11 +6,18 @@ using System;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI timerText;
+    public static Timer Instance;
 
+    [SerializeField] private TextMeshProUGUI timerText;
+    
     private int minutes;
     private float seconds;
-    private double milliseconds;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(this);
+    }
 
     private void Update()
     {
@@ -23,16 +30,32 @@ public class Timer : MonoBehaviour
     {
         seconds += Time.deltaTime;
 
-        if (milliseconds >= 10f ) 
-        {
-            seconds++;
-            milliseconds = 0;
-        }
-
         if(seconds >= 60f)
         {
             minutes++;
             seconds = 0;
         }
     }
+
+    public void CompareTime(TimeKeeper timeKeeper)
+    {
+        if(timeKeeper.GetBestMinutes() == 0 && timeKeeper.GetBestSeconds() == 0)
+        {
+            timeKeeper.SetTime(minutes, seconds);
+        }
+
+        if(minutes <= timeKeeper.GetBestMinutes())
+        {
+            if (seconds < timeKeeper.GetBestSeconds())
+            {
+                timeKeeper.SetTime(minutes, seconds);
+            }
+        }
+    }
+
+    public string GetTimerText()
+    {
+        return timerText.text;
+    }
+
 }

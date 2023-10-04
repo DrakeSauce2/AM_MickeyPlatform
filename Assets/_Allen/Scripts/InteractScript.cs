@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class InteractScript : MonoBehaviour
 {
+    public static InteractScript Instance;
+
     [SerializeField] private float grabRange;
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private LineRenderer lineRenderer;
 
-    private GameObject interactObject;
+    private GravityButton gravButton;
 
-    bool grabbed = false;
     Collider2D hit;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(this);
+    }
 
     private void Update()
     {
@@ -23,6 +30,22 @@ public class InteractScript : MonoBehaviour
         {
             lineRenderer.SetPosition(1, new Vector2(0, 0));
         }
+
+        if (Input.GetKeyDown(KeyCode.E) && gravButton != null)
+        {
+            gravButton.Interact();
+        }
+
+    }
+
+    public void SetGravityButton(GravityButton button)
+    {
+        gravButton = button;
+    }
+
+    public void RemoveGravityButton()
+    {
+        gravButton = null;
     }
 
     private void GrabObject()
