@@ -9,13 +9,10 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject startMenu;
     [SerializeField] private GameObject levelSelect;
     [Space]
-    [SerializeField] private TimeKeeper tutorialTime;
     [SerializeField] private TextMeshProUGUI tutorialBestTimeText;
     [Space]
-    [SerializeField] private TimeKeeper levelOneTime;
     [SerializeField] private TextMeshProUGUI levelOneBestTimeText;
     [Space]
-    [SerializeField] private TimeKeeper levelTwoTime;
     [SerializeField] private TextMeshProUGUI levelTwoBestTimeText;
 
 
@@ -28,11 +25,11 @@ public class MainMenu : MonoBehaviour
 
     private void SetTimes()
     {
-        tutorialBestTimeText.text = string.Format("{0:00}:{1:00.00}", tutorialTime.GetBestMinutes(), tutorialTime.GetBestSeconds());
+        tutorialBestTimeText.text = string.Format("{0:00}:{1:00.00}", TimeManager.Instance.timeKeepers[0].GetBestMinutes(), TimeManager.Instance.timeKeepers[0].GetBestSeconds());
 
-        levelOneBestTimeText.text = string.Format("{0:00}:{1:00.00}", levelOneTime.GetBestMinutes(), levelOneTime.GetBestSeconds());
+        levelOneBestTimeText.text = string.Format("{0:00}:{1:00.00}", TimeManager.Instance.timeKeepers[1].GetBestMinutes(), TimeManager.Instance.timeKeepers[1].GetBestSeconds());
 
-        levelTwoBestTimeText.text = string.Format("{0:00}:{1:00.00}", levelTwoTime.GetBestMinutes(), levelTwoTime.GetBestSeconds());
+        levelTwoBestTimeText.text = string.Format("{0:00}:{1:00.00}", TimeManager.Instance.timeKeepers[2].GetBestMinutes(), TimeManager.Instance.timeKeepers[2].GetBestSeconds());
     }
 
     private void LateUpdate()

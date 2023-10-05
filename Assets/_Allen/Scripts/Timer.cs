@@ -39,16 +39,16 @@ public class Timer : MonoBehaviour
 
     public void CompareTime(TimeKeeper timeKeeper)
     {
-        if(timeKeeper.GetBestMinutes() == 0 && timeKeeper.GetBestSeconds() == 0)
+        if(timeKeeper.GetBestMinutes() == 0 && TimeManager.Instance.timeKeepers[GameManager.Instance.level - 1].GetBestSeconds() == 0)
         {
-            timeKeeper.SetTime(minutes, seconds);
+            TimeManager.Instance.timeKeepers[GameManager.Instance.level - 1].SetTime(minutes, seconds);
         }
 
         if(minutes <= timeKeeper.GetBestMinutes())
         {
             if (seconds < timeKeeper.GetBestSeconds())
             {
-                timeKeeper.SetTime(minutes, seconds);
+                TimeManager.Instance.timeKeepers[GameManager.Instance.level - 1].SetTime(minutes, seconds);
             }
         }
     }

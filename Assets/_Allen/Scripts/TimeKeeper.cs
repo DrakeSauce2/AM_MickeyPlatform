@@ -5,10 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObject/TimeKeeper")]
 public class TimeKeeper : ScriptableObject
 {
-    [SerializeField] private int minutes;
-    [SerializeField] private float seconds;
+    public int minutes;
+    public float seconds;
     [Space]
-    [SerializeField] private int restarts;
+    public int restarts;
 
     public int GetBestMinutes() => minutes;
     public float GetBestSeconds() => seconds;  

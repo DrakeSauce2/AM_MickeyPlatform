@@ -25,7 +25,7 @@ public class EndLevelTrigger : MonoBehaviour
 
         Timer.Instance.CompareTime(timeKeeper);
 
-        bestTimeText.text = string.Format("Best Time: {0:00}:{1:00.00}", timeKeeper.GetBestMinutes(), timeKeeper.GetBestSeconds());
+        bestTimeText.text = string.Format("Best Time: {0:00}:{1:00.00}", timeKeeper.minutes, timeKeeper.seconds);
 
         if(timeKeeper.GetRestarts() == 0)
             timeKeeper.SetRetries(GameManager.Instance.GetRestarts());
@@ -40,6 +40,9 @@ public class EndLevelTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            GameManager.Instance.gameEnd = true;
+            GameManager.Instance.GameEnd();
+
             DisplayText();
             resultsScreen.SetActive(true);
 
